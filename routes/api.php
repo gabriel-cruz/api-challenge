@@ -17,6 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('deadlift',    'App\Http\Controllers\ApiController@getDeadliftRecord');
-Route::get('blacksquat',  'App\Http\Controllers\ApiController@getBlackSquatRecord');
-Route::get('brenchpress', 'App\Http\Controllers\ApiController@getBrenchPressRecord');
+Route::get('ranking',    'App\Http\Controllers\ApiController@getMovement');
